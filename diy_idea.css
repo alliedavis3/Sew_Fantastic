@@ -1,0 +1,118 @@
+/*  Final Project Diy/Idea Templates
+	Allison Davis
+	9/2016 */
+
+
+@import url(shell.css);
+
+	
+/* headings */
+h2	{
+	margin: 1%;
+	padding-bottom: 3%;
+	color: #FFFAFA; /*snow*/
+	font: 3em "Lucida Handwriting", "comic sans", cursive;
+	text-align: center;
+	text-shadow: 3px 3px black;
+	}
+
+/* products */
+
+#products {
+	width: 17%;
+	margin: 5% auto;
+	padding: 0.5%;
+	background: url(images/SF_about.jpg) no-repeat;
+	opacity: 0.9;
+	float: left;
+	text-align: center;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	border-bottom-left-radius: 35px;
+	box-shadow: 10px 10px 5px #8B4513; /* saddlebrown */
+	}
+
+#products h4 {
+	padding-top: 2em;
+	padding-right: 1em;
+	color: #EEE8AA; /* burleywood */
+	font: 2em "Lucida Handwriting", "comic sans", cursive;
+	text-align: right;
+	text-shadow: 2px 2px black;
+	line-height: 1.5em;
+	}
+#products p {
+	padding: 1em;
+	clear: both;
+	color: #FFFAFA; /*snow*/
+	font: 1.2em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	text-align: center;
+	line-height: .8em;
+	}
+	
+#products em {
+	line-height: 1.2em;
+	}
+	
+/* blog */	
+	
+#blog {
+	margin: 2% 22%;
+	padding: 0.5%;
+	text-align: center;
+	}
+
+#blog a img{
+	padding: 0.5em;
+	background-color: #EEE8AA; /* burleywood */ 
+	border: solid 2px #8B4513; /* saddlebrown */
+	box-shadow: 7px 7px 3px #8B4513; /* saddlebrown */
+	}
+
+#blog p {
+	margin: 3% 0 3% 5%;
+	padding: 3% 1% 3% 5%;
+	background-color: #EEE8AA; /* burleywood */
+	color: black;
+	font: 1em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	text-align: left;
+	line-height: 1.5em;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 7px 7px 3px #8B4513; /* saddlebrown */
+	}
+	
+#blog a {
+	color: black;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px #EEE8AA; /* burleywood */
+	}
+	
+#blog a:hover{
+	color: #8B4513; /* saddlebrown */
+	text-shadow: 2px 1px black;
+	}
+
+/* ads */
+	
+#ads {
+	width: 15%;
+	margin: 25em auto;
+	float: right;
+	}
+	
+#ads p{
+	position: fixed;
+	bottom: 0;
+	}
+	
+/* table */
+
+td    {
+	margin: 3% 1%;
+	padding: 3% 1%;
+	text-align: center;
+	}

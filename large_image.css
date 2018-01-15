@@ -1,0 +1,42 @@
+/*  Final Project Links Template
+	Allison Davis
+	9/2016 */
+
+@import url(shell.css);
+
+/*headings*/
+
+h3	{
+	font-size: 2em;
+	padding-bottom: 2%;
+	text-shadow: 3px 3px #FFFAFA; /*snow*/
+	color: #50301a; /* deep tangelo */
+	}
+
+/* large */
+#large {
+	margin: 1% 0 5% 0;
+	padding-bottom: 1%;
+	font: bold 2em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-align: center;
+	line-height: 2em; 
+	}
+	
+#large img {
+	padding: 2%;
+	border: dashed 3px #FFFAFA; /*snow*/
+	}
+	
+#large a {
+	color: #FFFAFA; /*snow*/
+	text-decoration: none;
+	text-shadow: 2px 2px #50301a; /* deep tangelo */
+	}
+#large a:hover{
+	color: #8B4513; /* saddlebrown */
+	text-shadow: 3px 3px #FFFAFA; /*snow*/
+	}
+
+
+
+

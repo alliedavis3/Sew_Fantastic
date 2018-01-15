@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+  <meta charset="utf-8">
+	<!-- 
+		Final Project Sales Cart
+		Author: Allie Davis
+		Date: 9/14/2016
+	-->
+	
+<title>Sew Fantastic</title>
+
+<style type = "text/css">
+
+
+@import url(shell.css);
+
+/*headings*/
+
+
+	
+h2 	{
+	padding-bottom: 3%;
+	color: black;
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 3px 3px #DAA520; /*goldenrod*/
+	border-bottom: double 5px #DAA520; /*goldenrod*/
+	}
+	
+h3	{
+	margin: 1em;
+	color: #FFFAFA; /*snow*/
+	font-size: 2em;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	}
+	
+h4	{
+	margin-bottom: 0.5em;
+	padding: 3% 4%;
+	color: #FFFAFA; /*snow*/
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: right;
+	text-shadow: 2px 2px 2px black;
+	line-height: 1.5em;
+	}
+	
+/* review */
+
+#review {
+	width: 50%;
+	margin: 4% 3% 5% 10%;
+	padding: 1%;
+	background-color: #EEE8AA; /* palegoldenrod */
+	opacity: 0.9;
+	float: left;
+	border: solid 5px #B8860B; /*dark golden rod*/
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 15px 15px 5px #8B4513; /* saddlebrown */
+	}
+	
+#review p {
+	padding: 4%;
+	margin: 1%;
+	clear: both;
+	color: black;
+	font: italic 0.75em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-align: center;
+	line-height: 1em;
+	}
+	
+#review img {
+	margin: 1%;
+	box-shadow: 10px 10px 10px black;
+	}
+	
+#review input.button {
+	margin: 2%;
+	padding: 1% 2%;
+	background-image: url(images/fabric_background.jpg);
+	float: right;
+    color: #DAA520; /*goldenrod*/
+	font: bold 1em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-shadow: 2px 2px black;	
+    border: outset 2px #B8860B; /*dark golden rod*/
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    display: inline;
+	}
+	
+#review table {
+	padding: 3%;
+	border-collapse: separate;
+	border-spacing: 1.5em;
+	}
+	
+#review strong {
+	font-size: 1.2em;
+	text-decoration: underline;
+	}
+
+/* cart */
+	
+#cart {
+	width: 22%;
+	margin: 15% 7% 0 0;
+	padding-top: 3%;
+	float: right;
+	background: url(images/SF_about.jpg) no-repeat;
+	border: solid 2px #B8860B; /*dark golden rod*/
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	box-shadow: 15px 15px 5px #8B4513; /* saddlebrown */
+	}
+	
+#cart input.button {
+	margin: 4% 10% 10% auto;
+	padding: 0.5em;
+    background-color: #8B4513; /* saddlebrown */
+	float: right;
+	color: #EEE8AA; /* palegoldenrod */
+	font: bold 1em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-shadow: 2px 2px black;
+    border: outset 4px #B8860B; /*dark golden rod*/
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    display: inline;
+	}
+	
+#cart table {
+	width: 70%;
+	margin: 3% 1% 3% 20%;
+	text-align: right;
+	border-collapse: collapse;
+	}
+	
+#cart th {
+	padding: 3%;
+	color: white;
+	font-size: 1.2em;
+	text-shadow: 2px 2px black;
+	border-bottom: ridge 4px #8B4513; /* saddlebrown */
+	}
+	
+#cart td {
+	min-width: 15px;
+	padding: 3% 0;
+	color: white;
+	font-size: 1em;
+	border-bottom: solid 1px #8B4513; /* saddlebrown */
+	}
+	
+/*form*/
+
+fieldset {
+	float: left;
+	border: none;
+	}
+	
+textarea {
+	margin: 1% 5%;
+	padding: 3%;
+	color: #8B4513; /* saddlebrown */
+	font-family: "Lucida Handwriting", "comic sans", Florence, cursive;
+	border: inset 3px #B8860B; /*dark golden rod*/
+	}
+	
+label {
+	margin-right: 20%;
+	padding: 3% 0;
+	float: right;
+	color: #8B4513; /* saddlebrown */ 
+	font-weight: bold;
+	line-height: 2em;
+	}
+	
+select {
+	margin: 4% 0;
+	padding: 2%;
+	float: right;
+	color: #8B4513; /* saddlebrown */
+	font-size: 0.75em;
+	font-weight: bold;
+	text-align: right;
+	border: solid 1px #8B4513; /* saddlebrown */
+	border-radius: 5px;
+	display: block;
+	}
+	
+/* independant class */
+
+.border {
+	padding: 3% 5%;
+	background-color: #f7f4d5; /*snow*/
+	color: black;
+	font-size: 1.2em;
+	text-align: left;
+	border-top: inset 4px #DAA520; /*goldenrod*/
+	border-left: inset 4px #DAA520; /*goldenrod*/
+	}
+	
+</style>
+</head>
+
+<body>
+
+<section id="container">
+
+<header>
+
+	<a href = "index.html" title= "Home Page">
+	<img src = "images/SF_logo_header.jpg" alt = "Sew Fantastic Logo" /></a>
+	
+	
+	<form action="SF_sitemap.html" method="get">
+		<input type = "text" name = "Search" id= "Search" size = "20" placeholder = "Search" class = "text" />
+		<input type = "submit" value = "Go" class = "button" />	
+	</form>
+	
+</header> 
+
+
+<nav>
+	<ul>
+	  <li><a href= "SF_sales.html" title= "Sales Page">Shop</a></li>
+	  <li><a href= "SF_diy.html" title= "DIY pages">DIY center</a></li>
+	  <li><a href= "SF_ideas.html" title= "Idea pages">Ideas</a></li>
+	  <li><a href= "SF_sales_cart.html" title= "Shopping Cart">Shopping Cart</a></li>
+	  <li><a href= "SF_contact_page.html" title= "Sign In">Sign In</a></li>
+	</ul>
+</nav> <!-- end navbar -->
+
+
+<section id="review">
+
+<h2><br><strong>Review Order</strong><br /></h2>
+
+<form id = "submit" name = "submit" action= "mailto:alliegator3@hotmail.com" method = "post">
+
+<table>
+	<tr>
+		<th>
+			<img src="blog/sales_apron.jpg"
+			width = "200" height = "200"
+			alt = "Apron, green"
+			title = "Apron, green"/>
+		</th>
+		<th class = "border" >
+			<strong>Size:</strong> Childs Large
+			<br><em>Includes- apron and satchel for utensils</em><br />
+			<br><strong>Price:</strong> $15.00 + tax & shipping fees*<br />		
+			
+			
+			<select name = "quantity" id = "itemone">
+				<option value = "1" selected = "selected">1</option>
+				<option value = "2">2</option>
+				<option value = "3">3</option>
+				<option value = "4">4</option>
+				<option value = "5">5</option>
+			</select>
+			<label  for = "itemone">Quantity</label>
+		</th>
+	</tr>	
+</table>	
+	
+<fieldset>	
+	<textarea name = "comments"	rows = "5" cols = "40">Comments and special requests, we will accommodate you to the best of our ability!</textarea>
+
+	<input type = "submit" value = "Update" class = "button" />	<input type = "reset" value = "Reset" class = "button" />
+</fieldset>
+
+<table>
+	<tr>
+		<th>
+			<img src="blog/sales_clothes.jpg"
+				width = "200" height = "200"
+				alt = "Elsa Dress"
+				title = "Elsa Dress"/>
+		</th>
+		<th class = "border" ><strong>Size:</strong> Childs 7x
+		<br><em>Includes- dress, cape, and snowflake "treat" bag</em><br />
+		<br><strong>Price:</strong> $25.00 + tax & shipping fees*<br />
+			
+			<select name = "quantity" id = "itemtwo">
+				<option value = "1" selected = "selected">1</option>
+				<option value = "2">2</option>
+				<option value = "3">3</option>
+				<option value = "4">4</option>
+				<option value = "5">5</option>
+			</select>
+			<label  for = "itemtwo">Quantity</label>
+		</th>
+	</tr>	
+</table>
+
+	<fieldset>	
+	<textarea name = "comments"	rows = "5" cols = "40">Comments and special requests, we will accommodate you to the best of our ability!</textarea>
+
+	<input type = "submit" value = "Update" class = "button" />	<input type = "reset" value = "Reset" class = "button" />
+</fieldset>
+
+</form>
+	<p>*Applicable taxes and shipping fees will be applied at checkout</p>
+
+	
+</section> <!-- end review-->
+
+<section id="cart">
+
+
+
+<h3>Order Summary</h3>
+
+<table>
+	<tr>
+		<th>Item
+		</th>
+		<th>Price
+		</th>
+	</tr>
+	<tr>
+		<td>Child's Apron, Green
+		</td>
+		<td>$15.00
+		</td>
+	</tr>
+	<tr>
+		<td>Elsa Costume, Blue
+		</td>
+		<td>$25.00
+		</td>
+	</tr>
+</table>
+	
+	<h4>Order Total:  $40.00</h4>
+<form id = "Checkout" name = "comment" action= "http://www.paypal.com" method = "get">
+	<input type = "submit" value = "Checkout" class = "button" />
+</form>
+
+
+</section> <!-- end cart -->
+
+
+<footer>
+	<ul>
+	   <li><a href= "index.html" title= "Home Page">Home</a></li>
+	   <li><a href= "SF_diy_tutorial.html" title= "Idea pages">Blogs</a></li>
+	   <li><a href= "SF_sales.html" title= "Sales Page">Shop</a></li>
+	   <li><a href= "SF_diy.html" title= "DIY pages">DIY center</a></li>
+	   <li><a href= "SF_ideas.html" title= "Idea pages">Ideas</a></li>
+	   <li><a href= "SF_contact_page.html" title= "Sign In">Sign In</a></li>
+	   <li><a href= "SF_sitemap.html" title= "Sitemap">Sitemap</a></li>
+	</ul>
+  
+</footer> <!-- end footer -->
+
+</section> <!-- end container -->
+
+</body>
+</html>

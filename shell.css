@@ -1,0 +1,131 @@
+/*  Final Project Shell Template
+	Allison Davis
+	9/2016 */
+
+*	{
+	margin: 0;
+	padding: 0;
+	}	
+	
+/* section ids */	
+
+#container {
+	width: 90%;
+	margin: 0 auto;
+	}
+
+/* independant */
+	
+.center {
+	text-align: center;
+}
+
+/* header */
+header {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	}
+	
+header input {
+	margin: 0;
+	padding: 3px 10px 3px 4px;
+	position: absolute;
+	top: 3%;
+	right: 3em;
+	font-family: "Lucida Handwriting", "comic sans", Florence, cursive;
+	float: right;
+	display: inline;
+	box-shadow: 2px 2px 5px black;
+	}
+
+header input.text {
+	border: solid 2px #CD853F; /*peru*/
+	border-radius: 7px;
+	color: #8B4513; /* saddlebrown */
+	}
+
+header input.button {
+    background-image: url(images/fabric_background.jpg);
+    border: outset 2px #DAA520; /*goldenrod*/
+    border-radius: 5px;
+    color: #d9ac8d;  /* nan */
+    font-weight: bold;  
+    text-shadow: 1px 1px black;
+	}
+	
+/* navigation */
+nav	{
+	width: 100%;
+	height: 40%;
+	margin: 0;
+	padding: 0.5%;
+	clear: both;
+	text-align: center;
+	border-bottom: double 10px #8B4513; /* saddlebrown */
+	}
+	
+nav ul li{
+	margin: 0 1% 2% 1%;
+	padding: 0.25% 1% 0.25% 0.5%;
+	background-color: #FFFAFA; /*snow*/
+	font: bold 1.5em "Lucida Handwriting", "comic sans", Florence, cursive;
+	line-height: 1.5em;
+	text-shadow: 1px 1px black;
+	border: outset 2px #DAA520; /*goldenrod*/
+	display: inline;
+	list-style-type: none;
+	}
+	
+/* links */
+
+nav a {
+	color: #8B4513; /* saddlebrown */
+	display: inline; 
+	text-decoration: none;
+}
+nav a:hover {
+	color: #e1b74c; /* light goldenrod*/
+	text-decoration: underline;
+	}
+	
+/* body */
+
+body {
+	background-image: url(images/SF_background.jpg);
+	}
+	
+/* footer */
+
+footer {
+	width: 100%;
+	height: 25%;
+	margin-top: 1em;
+	clear: both;
+	background-color: #EEE8AA; /* burleywood */
+	opacity: 0.8;
+	text-align: center;
+	font-weight: bold;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border: double 5px #8B4513; /* saddlebrown */
+	}
+footer ul li {
+	margin-right: 1em;
+	margin-left: 1em;
+	padding-top: 5%;
+	list-style-type: none;
+	display: inline;
+	font: 1.5em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	line-height:1.5;
+	}
+footer a {
+	color: 	#8B4513; /* saddlebrown */
+	text-shadow: 1px 1px 1px black;
+	}
+footer a:hover {
+	color: #e1b74c; /* light goldenrod*/
+	text-decoration: none;
+	text-shadow: 2px 2px 1px #50301a; /* deep tangelo */
+}
+

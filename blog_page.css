@@ -1,0 +1,153 @@
+/*  Final Project Blog Page Template
+	Allison Davis
+	9/2016 */
+
+@import url(shell.css);
+
+	
+/* headings */
+h2    {
+	margin: 2% auto;
+	color: #FFFAFA; /*snow*/
+	font: 3em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-align: center;
+	text-shadow: 3px 3px black;
+	}
+h4	{
+	font: bold 1.5em "Lucida Handwriting", "comic sans", Florence, cursive;
+	
+}
+
+/* products*/
+
+#products {
+	width: 17%;
+	margin: 5% auto;
+	padding: 0.5%;
+	background: url(images/SF_about.jpg) no-repeat;
+	opacity: 0.9;
+	float: left;
+	text-align: center;
+	box-shadow: 10px 10px 5px #8B4513; /* saddlebrown */
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	border-bottom-left-radius: 35px;
+	}
+
+#products h4 {
+	padding-top: 2em;
+	padding-right: 1em;
+	color: #EEE8AA; /* burleywood */
+	font: 2em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-align: right;
+	text-shadow: 2px 2px black;
+	line-height: 1.5em;
+	}
+	
+#products p {
+	padding: 1em;
+	clear: both;
+	color: #FFFAFA; /*snow*/
+	font: 1.2em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	text-align: center;
+	line-height: 0.8em;
+	}
+	
+#products em {
+	line-height: 1.2em;
+	}
+	
+/* blog */
+
+#blog {
+	margin: 2% 22% 3% 22%;
+	padding: 0.5%;
+	text-align: center;
+	}
+	
+#blog img{
+	margin: 2%;
+	padding: 0.75em;
+	border: dashed 2px #8B4513; /* saddlebrown */
+	}
+
+#blog p {
+	padding: 3%;
+	background-color: #EEE8AA; /* burleywood */
+	opacity: 0.8;
+	color: black;
+	font: bold 1em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	text-align: center;
+	line-height: 1.5em;
+	border-radius: 10px;
+	}
+
+#blog ul li{
+	margin: 4% 5%;
+	padding: 2%;
+	background-color: #EEE8AA; /* burleywood */
+	opacity: 0.8;
+	color: black;
+	font: 1.2em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	text-align: left;
+	line-height: 1.5em;
+	border: dashed 1px #EEE8AA; /* burleywood */
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	list-style-type: none;
+	}
+	
+#blog ol li{
+	margin: 2% 5%;
+	padding: 1% 2%;
+	background-image: url(images/fabric_background.jpg);
+	color: #FFFAFA; /*snow*/
+	font: 1.2em Georgia, "Times New Roman", "Palatino Linotype", serif;
+	text-align: left;
+	text-shadow: 2px 2px black;
+	line-height: 1.5em;
+	border: dashed 1px #EEE8AA; /* burleywood */
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	}
+	
+#blog a {
+	margin-left: 65%;
+	color: #50301a; /* deep tangelo */
+	font: italic bold 1em "Lucida Handwriting", "comic sans", Florence, cursive;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #EEE8AA; /* burleywood */
+	}
+#blog p a {
+	font-size: 1em;
+	margin: 1%;
+	}
+
+#blog em a{
+	margin: 3%;
+	font-size: 1.5em;
+	}
+	
+#blog strong a{
+	margin: 3%;
+	font-size: 2em;
+	}
+	
+#blog a:hover {
+	color: #DAA520; /*goldenrod*/
+	text-shadow: 1px 1px 1px black;
+	text-decoration: underline;
+	}
+	
+/* ads */
+
+#ads {
+	width: 15%;
+	margin: 25em auto;
+	float: right;
+	}
+	
+#ads p{
+	position: fixed;
+	bottom: 5%;
+	}
